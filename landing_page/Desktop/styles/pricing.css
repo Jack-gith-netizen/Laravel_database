@@ -1,0 +1,40 @@
+body {
+	background-color: #f1faee;
+	color: #1d3557;
+	font-family: Tahoma,Verdana,Segoe,sans-serif;
+}
+
+h1,
+h2 {
+	font-family: Georgia,Times,"Times New Roman",serif;
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+table, 
+th, 
+td {
+	border: 1px solid #e63946;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+img {
+	border: 2px dashed #e63946;
+}
+
+blockquote p {
+	font-style: italic;
+}
+
+blockquote cite {
+	font-style: normal;
+}
+
+.section-two {
+	background-color: #1d3557;
+	color: #f1faee;
+}
