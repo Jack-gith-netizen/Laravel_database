@@ -13,7 +13,6 @@
 # Components
 	- Header
 	- Main
-	- Sidebar
 	- Footer
 --------------------------------------------------------------*/
 
@@ -127,13 +126,126 @@ a:active {
 	background-color: #fff;
 }
 
-/* add flex styles here */
+@media (min-width: 50em) {
+
+	.site-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.site-header,
+	.site-footer {
+		width: 100%;
+	}
+
+	.site-main {
+		width: 75%;
+	}
+
+	.site-sidebar {
+		width: 25%;
+	}
+
+}
 
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
 
+/* Header
+--------------------------------------------- */
+.site-header {
+	background-color: #ffe6bf;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
 
+.site-logo {
+	max-width: 6rem;
+	margin: 1rem;
+}
+
+.site-logo img {
+	display: block;
+}
+
+.site-navigation {
+	padding: 0 1rem;
+}
+
+.site-navigation ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.site-navigation a {
+	display: block;
+	padding: 1rem;
+	font-size: 1.25rem;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/* START -- STYLES FOR MOBILE MENU */
+/* we will cover this more later */
+.site-navigation ul {
+	display: none;
+	position: absolute;
+	top: 8rem;
+	left: 0;
+	right: 0;
+	background-color: #ffe6bf;
+}
+
+.menu-toggle {
+	display: block;
+	background-color: transparent;
+	border: 0;
+	padding: 1rem;
+}
+
+.menu-toggle:focus {
+	border: 0;
+	outline: 1px dotted;
+}
+
+.site-navigation.toggled ul {
+	display: block;
+}
+/* END -- STYLES FOR MOBILE MENU */
+
+
+@media (min-width: 43.75em) {
+
+	.menu-toggle {
+		display: none;
+	}
+
+	.site-navigation {
+		flex: 1 1 auto;
+		padding: 0 1rem;
+	}
+
+	.site-navigation ul,
+	.site-navigation.toggled ul {
+		display: flex;
+		justify-content: flex-end;
+		/* START - Remove Mobile Menu Styles */
+		position: relative;
+		top: 0;
+		/* END - Remove Mobile Menu Styles  */
+	}
+
+	.site-navigation a {
+		line-height: 8rem; /* Matches the height of the .site-logo: 6rem + 1rem + 1rem */
+		padding: 0 1rem;
+	}
+
+}
 
 
 /* Main
@@ -150,6 +262,14 @@ article {
 
 article footer {
 	margin: 1rem 0 0;
+}
+
+.alignleft {
+	
+}
+
+.alignright {
+	
 }
 
 
