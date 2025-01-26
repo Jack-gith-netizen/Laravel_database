@@ -1,0 +1,300 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN NORMALIZE.CSS)
+	- Normalize
+	- Box sizing
+	- Media width
+# Base
+	- Typography
+	- Elements
+	- Links
+# Components
+	- Header
+	- Main
+	- Footer
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+/* Typography
+--------------------------------------------- */
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #282828;
+	background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	margin: .5em 0;
+	font-size: 1.75rem;
+}
+
+p {
+	margin: 0 0 1.5em;
+}
+
+
+/* Elements
+--------------------------------------------- */
+section,
+aside {
+	padding: 0 1rem;
+}
+
+
+/* Links
+--------------------------------------------- */
+a,
+a:visited { 
+	color: #008000;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+	text-decoration: underline;
+}
+
+a:focus {
+	outline: 1px dotted;
+}
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+.site-wrapper {
+	/* This is for very large screens */
+	max-width: 120rem;
+	margin: 0 auto;
+}
+
+/* Header
+--------------------------------------------- */
+.site-header {
+	padding: 0 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+a.site-name {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	color: #282828;
+}
+
+.site-navigation ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	display: none;
+	position: absolute;
+	top: 4.5rem;  /* Matches the height of the .site-header */
+	left: 0;
+	right: 0;
+	z-index: 2;
+	background-color: #fff;
+}
+
+.site-navigation.toggled ul {
+	display: block;
+}
+
+.site-navigation a {
+	display: block;
+	padding: 1rem;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: #282828;
+}
+
+.menu-toggle {
+	display: block;
+	background-color: transparent;
+	border: 0;
+	padding: 1rem;
+}
+
+.menu-toggle:focus {
+	border: 0;
+	outline: 1px dotted;
+}
+
+@media (min-width: 50em) {
+
+	.menu-toggle {
+		display: none;
+	}
+
+	.site-navigation {
+		flex: 1 1 auto;
+		padding: 0 1rem;
+	}
+
+	.site-navigation ul,
+	.site-navigation.toggled ul {
+		display: flex;
+		justify-content: flex-end;
+		position: relative;
+		top: 0;
+	}
+
+	.site-navigation a {
+		line-height: 4.5rem; /* Matches the height of the .site-header */
+		padding: 0 1rem;
+	}
+
+}
+
+
+/* Main
+--------------------------------------------- */
+/* Page Header */
+.page-header {
+	position: relative;
+}
+
+.page-header h1 {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	transform: translateY(-50%);
+	margin: 0;
+	font-size: 3rem;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.page-header img {
+	display: block;
+	object-fit: cover;
+	min-height: 25rem;
+}
+
+@media (min-width: 50em) {
+
+	.page-header h1 {
+		font-size: 5rem;
+	}
+	
+}
+
+/* Section: About */
+.section-about {
+	max-width: 50rem;
+	margin: 3rem auto 4rem;
+}
+
+.section-about h2 {
+	font-size: 2rem;
+	text-align: center;
+}
+
+.section-about p {
+	font-size: 1.125rem;
+	line-height: 2;
+}
+
+/* Section: Products */
+.product {
+	max-width: 18.75rem;
+	margin: 2rem auto;
+	box-shadow: 0px 0px 3px 2px #eee;
+}
+
+.product-text {
+	padding: 1rem;
+}
+
+.product-name {
+	font-size: 1.5rem;
+	margin: 0;
+}
+
+a.product-link {
+	display: inline-block;
+	padding: .5rem 1rem;
+	background-color: #008000;
+	color: #fff;
+	text-decoration: none;
+}
+
+a.product-link:hover,
+a.product-link:focus,
+a.product-link:active {
+	background-color: #00800080;
+}
+
+a.product-link:focus {
+	outline: 1px dotted #008000;
+}
+
+@media (min-width: 50em) {
+
+	.section-products {
+		display: flex;
+	}
+
+	.products-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.product {
+		margin: 1rem;
+	}
+
+	.products-sidebar {
+		width: 18%;
+		order: -1;
+	}
+
+}
+
+
+/* Footer
+--------------------------------------------- */
+.site-footer {
+	background-color: #eee;
+	padding: 1rem;
+}
+
+.site-footer nav ul {
+	list-style: none;
+	padding: 0;
+}
+
+@media (min-width: 50em) {
+
+	.site-footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.site-footer p {
+		margin: 0;
+	}
+
+}
