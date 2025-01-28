@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>About Us</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/normalize-fwd.css">
+	<link rel="stylesheet" href="styles/about.css">
+</head>
+
+<body>
+
+	<div class="site-wrapper">
+
+		<header>FWDP 1000 - Web Development 1</header>
+
+		<main>
+			<h1>About Us</h1>
+
+			<h2>Our Story</h2>
+			<p>We are a local company based out of <em>beautiful</em> Vancouver, British Columbia, Canada. It is our
+				passion for creating that allows us to thrive and gives our customers the benefits of our boundless
+				energy. Within the framework of this experience we can provide the best results for our customers so
+				that they can reach the potential they truly desire. We <strong>never</strong> turn down a job! No job
+				is too small and every job is too big for us to complete so we will never let you down with a medium to
+				infinite sized job.</p>
+
+			<p>With our proprietary <abbr title="Digital Alignment Recovery Program">DARP</abbr> system we never fall
+				short of our customers needs. Our 100% perfect record with all clients is actually completely
+				unbelievable but you can trust that we are the most honest and reliable business in the history of our
+				great civilization. As the great philosopher Michael Scott said, <q
+				   cite="https://www.imdb.com/title/tt1031459/characters/nm0136797">"In the end, life and business are
+					about human connections. And computers are about trying to murder you in a lake."</q></p>
+
+			<div class="team">
+				<img src="images/customer1.jpg" alt="A photo of a man" class="team-member-1">
+				<img src="images/cat-photo.jpg" alt="A photo of a cat at a desk" class="team-member-2">
+			</div>
+
+			<h3>Our Favorite Buzzwords</h3>
+
+			<ul>
+				<li>Synergy</li>
+				<li>Pivot</li>
+				<li>Alignment</li>
+				<li>Disruptive</li>
+			</ul>
+
+			<h2>Our Resume</h2>
+			<p>You can <a href="media/resume.pdf">download our resume</a> to learn more.</p>
+
+			<form action="#" method="post">
+
+				<h2>Apply Now</h2>
+
+				<fieldset>
+					<legend><span class="number">1</span>Your basic info</legend>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="user-name">
+
+					<label for="mail">Email:</label>
+					<input type="email" id="mail" name="user-email">
+
+					<label for="password">Password:</label>
+					<input type="password" id="password" name="user-password">
+
+					<label for="bio">Biography:</label>
+					<textarea id="bio" name="user-bio"></textarea>
+				</fieldset>
+
+				<fieldset>
+					<legend><span class="number">2</span>Work Details</legend>
+					<label>Preferred Work Setup</label>
+
+					<input type="radio" id="hybrid" value="hybrid" name="work-setup">
+					<label for="hybrid" class="light">Hybrid</label>
+					<input type="radio" id="remote" value="remote" name="work-setup">
+					<label for="remote" class="light">Remote</label>
+					<label for="job">Job Role:</label>
+					<select id="job" name="user-job">
+						<optgroup label="Web">
+							<option value="Frontend Developer">Front-End Developer</option>
+							<option value="PHP Developor">PHP Developer</option>
+							<option value="Dython Developer">Python Developer</option>
+							<option value="Rails Developer"> Rails Developer</option>
+							<option value="Web Designer">Web Designer</option>
+							<option value="WordPress Developer">WordPress Developer</option>
+						</optgroup>
+						<optgroup label="Mobile">
+							<option value="Android Developer">Android Developer</option>
+							<option value="iOS Developer">iOS Developer</option>
+							<option value="Mobile Designer">Mobile Designer</option>
+						</optgroup>
+					</select>
+
+					<label>Interests:</label>
+
+					<input type="checkbox" id="development" value="interest-development" name="user-interest">
+					<label class="light" for="development">Development</label>
+					
+
+					<input type="checkbox" id="design" value="interest-design" name="user-interest">
+					<label class="light" for="design">Design</label>
+					
+
+					<input type="checkbox" id="business" value="interest-business" name="user-interest">
+					<label class="light" for="business">Business</label>
+				</fieldset>
+				<input type="submit" value="Submit">
+			</form>
+
+
+		</main>
+
+		<footer>
+			<a href="mailto:info@example.com">info@example.com</a>
+			<p>Copyright 2024.</p>
+		</footer>
+
+	</div>
+
+</body>
+
+</html>
