@@ -224,7 +224,7 @@ a:active {
 	width: clamp(1rem, 90vw, 70rem);
 	margin-right: auto;
 	margin-left: auto;        
-    font-size: 25px;
+    font-size: 1.6rem;
 }
 
 /* Footer
@@ -232,7 +232,8 @@ a:active {
 .site-footer {
 	display: flex;
 	justify-content: center;
-	background-color:  #A2B9C2 ;
+	background-color:  #ffffff;
+	font-size: 1.25rem;
 }
 
 .contact-me {
