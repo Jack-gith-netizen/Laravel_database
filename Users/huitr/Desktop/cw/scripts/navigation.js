@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 window.addEventListener('scroll', function () {
     const header = document.querySelector('.site-header');
     const scrollPosition = window.scrollY;
-    if (scrollPosition > 100) {
+    if (scrollPosition > 200) {
       header.style.top = '0';
     } else {
       header.style.top = '-200px';
