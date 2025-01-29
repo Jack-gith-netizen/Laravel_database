@@ -59,7 +59,7 @@ ul {
 /* Links
 --------------------------------------------- */
 a {
-	
+	text-decoration: none; 
 }
 
 a:visited {
@@ -128,10 +128,6 @@ a:active {
    align-items: center;
 }
 
-
-
-
-
 .site-header {
 	position: fixed;
 	z-index: 1000;
@@ -199,6 +195,54 @@ a:active {
 	.nav-menu li{
 		padding-right: 70px;
 	}
+
+	.collage {
+		width: 100%;
+		height: 38rem;
+		position: relative;
+		margin-bottom: 80px;
+	}
+  
+	.collage img {
+		position: absolute;  
+		transition: all 0.3s ease; 
+		width: 30%; 
+	height: auto; /* 高度自动调整，保持图片比例 */
+	object-fit: cover; /* 图片填充，但保持比例不失真 */ 
+	
+	}
+
+	.lemon-photo-1 {
+		top: 20px;
+		left: 20px;
+		z-index: 4;
+		transform: rotate(0deg);
+	}
+
+	.lemon-photo-2 {
+		top: 0px;
+		left: 300px;
+		z-index: 3;	
+		transform: rotate(10deg);
+	}
+
+	.lemon-photo-3 {
+		top: 280px;
+		left: 0px;
+		z-index: 2;	
+		transform: rotate(-10deg);	
+	}
+
+	.lemon-photo-4 {
+		top: 320px;
+		left: 270px;
+		z-index: 1;
+		transform: rotate(5deg);
+	}
+
+	.collage img:hover {
+		z-index: 5;  
+}
 		
 }
 
@@ -227,65 +271,47 @@ a:active {
     font-size: 1.6rem;
 }
 
-/* Footer
---------------------------------------------- */
-.site-footer {
-	display: flex;
-	justify-content: center;
-	background-color:  #ffffff;
-	font-size: 1.25rem;
-}
-
 .contact-me {
-    width: 50%;
-    margin: 0 auto;
-	border: none;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
+    width: 30%;  
+    margin: 0 auto;  
+    padding: 18px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border: none;  
 }
 
 legend {
-	font-weight: bold;
+    font-weight: bold;
     font-size: 2.5rem;
     margin-bottom: 20px;
-    font-weight: bold;
-    color: #333;
-}
-
-.form-wrapper {
-    display: flex;
-    flex-direction: column;
+    color: #0e0e0e;
+    text-align: center; 
 }
 
 .form-part {
-    margin-bottom: 20px; 
+    margin-bottom: 10px;
 }
 
-label {
-    font-size: 16px;
-    font-weight: bold;
-    color: #555;
-	display: block; 
-    margin: bottom 80px;
+#btn{
+	align-items: center;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 70%;
+    width: 100%;
     padding: 12px;
     font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 12px;  
     box-sizing: border-box;
     transition: border-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 textarea {
-    resize: vertical; 
+    resize: vertical;  
 }
 
 input[type="text"]:focus,
@@ -293,26 +319,37 @@ input[type="email"]:focus,
 textarea:focus {
     border-color: #66afe9;
     outline: none;
-	box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3); 
 }
 
 button {
-    padding: 12px 20px;
-    background-color: #007bff;
+	padding: 1rem 1rem;
+    background-color: rgb(12, 85, 148);
     color: white;
     font-size: 16px;
     border: none;
-    border-radius: 4px;
+    border-radius: 12px;  
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s;
+	margin: 10px auto;
 }
 
 button:hover {
     background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
 @media (max-width: 55em) {
     .contact-me {
         width: 90%;
     }
+}
+
+/* Footer
+--------------------------------------------- */
+.site-footer {
+	display: flex;
+	justify-content: center;
+	font-size: 1.5rem;
+	background-color:  #A2B9C2 ;
 }
