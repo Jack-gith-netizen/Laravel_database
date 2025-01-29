@@ -8,3 +8,13 @@ document.addEventListener("DOMContentLoaded", function () {
         this.setAttribute('aria-expanded', !isExpanded);
     });
 });
+
+window.addEventListener('scroll', function () {
+    const header = document.querySelector('.site-header');
+    const scrollPosition = window.scrollY;
+    if (scrollPosition > 100) {
+      header.style.top = '0';
+    } else {
+      header.style.top = '-200px';
+    }
+  });
