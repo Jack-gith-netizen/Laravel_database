@@ -35,19 +35,13 @@ h6 {
 }
 
 body {
-	font-family: nunito,sans-serif;
+	font-family: 'Nunito', sans-serif; 
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 1.5;
 	color: rgb(40, 40, 40);
 	max-width: 100%;
 }
-
-h2,h3,h4 {
-    font-family: 'Roboto', sans-serif;
-}
-
-
 
 ul {
     font-size: 1.625rem;
@@ -147,10 +141,10 @@ a:active {
 
 #header-menu {
 	display: none; 
-	top: 50px; 
+	top: 70px; 
 	right: 0;
 	position: fixed;
-	background-color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.92);
 	width: 100%;
 }
 
