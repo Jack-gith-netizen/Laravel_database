@@ -124,8 +124,10 @@ a:active {
 }
 
 .site-logo {
-   height: 100%;
+   height: 140px;
+   width: auto;
    align-items: center;
+   padding: 20px;
 }
 
 .site-header {
@@ -145,7 +147,7 @@ a:active {
 
 #header-menu {
 	display: none; 
-	top: 60px; 
+	top: 50px; 
 	right: 0;
 	position: fixed;
 	background-color: #ffffff;
@@ -213,56 +215,55 @@ a:active {
 		grid-template-columns: repeat(8, 1fr);
 		grid-template-rows: 1fr;
 		gap: 1rem;
-	  }
+	}
 
-	  .caption {
+	.caption {
 		width: fit-content;
 		padding: 1rem;
-	  }
+	}
 
-	  .caption img {
+	.caption img {
 		height: 20rem;
 		width: 20rem;
 		object-fit: cover;
-	  }
+	}
 
-	  .caption:hover {
+	.caption:hover {
 		z-index: 1000;
 		transform: rotate(0) scale(1.1);
 		transition: ease 0.3s;
-	  }
+	}
 
-	  .photo1 {
+	.photo1 {
 		position: absolute;
 		top: 2rem;
 		left: 2rem;
 		z-index: 2;
 		grid-column: 2/5;
 		transform: rotate(-10deg);
-	  }
+	}
 	
-	  .photo2 {
+	.photo2 {
 		grid-column: 4/7;
 		z-index: 3;
 		transform: rotate(-10deg);
-	  }
+	}
 	
-	  .photo3 {
+	.photo3 {
 		position: absolute;
 		top: 8rem;
 		grid-column: 3/6;
 		z-index: 4;
 		transform: rotate(10deg);
-	  }
+	}
 	
-	  .photo4 {
+	.photo4 {
 		position: absolute;
 		grid-column: 5/8;
 		top: 3rem;
 		z-index: 1;
 		transform: rotate(15deg);
-	  }
-
+	}
 }
 
 .site-header{
@@ -312,10 +313,6 @@ legend {
     margin-bottom: 10px;
 }
 
-#btn{
-	align-items: center;
-}
-
 input[type="text"],
 input[type="email"],
 textarea {
@@ -352,6 +349,7 @@ button {
     transition: background-color 0.3s, box-shadow 0.3s;
 	margin: 10px auto;
 	box-shadow: 0px 10px 15px -7px #000;
+    display: block;  /* 设置按钮为块级元素，使其可以使用 auto margin 居中 */
 }
 
 button:hover {
