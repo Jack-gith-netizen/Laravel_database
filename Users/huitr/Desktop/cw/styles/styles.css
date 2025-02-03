@@ -134,7 +134,7 @@ div:has(> blockquote) {
 .history img {
 	position: relative; 
 	width: 100%; 
-	height: auto; 
+	height: 100%; 
 	z-index: 1; 
 	top: 50%;
 	left: 50%;
@@ -386,7 +386,7 @@ p {
 	.history img {
 		position: relative; 
 		max-width: 100%;
-		height: auto; 
+		height: 100%; 
 		z-index: 1; 
 		top: 50%;
 		left: 50%;
