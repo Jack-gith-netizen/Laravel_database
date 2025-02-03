@@ -1,27 +1,4 @@
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Generic (CALLED IN ANOTHER FILE)
-	- Normalize
-	- Box sizing
-	- Media width
-# Base
-	- Typography
-	- Elements
-	- Links
-# Layouts
-# Components
-	- Header
-	- Main
-	- Footer
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Base
-
---------------------------------------------------------------*/
-
-/* Typography
+/* Base
 --------------------------------------------- */
 h1,
 h2,
@@ -29,9 +6,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Nunito', sans-serif; 
+  font-family: 'Montserrat', sans-serif;
   font-size: clamp(2rem, 5vw, 2.5rem);
   line-height: 2.5rem;
+  text-align: center;
 }
 
 body {
@@ -47,45 +25,63 @@ ul {
     font-size: 1.625rem;
 }
 
+p {
+	margin: 0 0 1.5em;
+	word-spacing: -0.1em;
+}
 
-/* Elements
---------------------------------------------- */
 /* Links
 --------------------------------------------- */
 a {
 	text-decoration: none; 
 }
 
-a:visited {
-	
-}
-
 .nav-menu a:hover {
     color: #ff6347;
 }	
 
-a:focus {
-	
+.grid-map img:hover {
+    transform: scale(1.1); 
 }
 
-a:active {
-	
-}
-
-
-/*--------------------------------------------------------------
-# Layout
---------------------------------------------------------------*/
-
-
- 
-
-/*--------------------------------------------------------------
-# Components
---------------------------------------------------------------*/
-
-/* Header
+/* Header, Main
 --------------------------------------------- */
+.about h2 {
+	display: flex;              
+	justify-content: center;     
+	align-items: center; 
+	color: black; 
+	margin-bottom: 10px   				
+}
+
+.about p{
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	width: clamp(1rem, 90vw, 70rem);
+	margin-right: auto;
+	margin-left: auto;        
+    font-size: 1.6rem;
+}
+
+div:has(> blockquote) {
+	margin: 10px auto;
+	padding: 15px;
+	border-radius: 5px;
+  }
+  
+  blockquote p::before {
+	content: '\201C';
+  }
+  
+  blockquote p::after {
+	content: '\201D';
+  }
+  
+  blockquote + p {
+	text-align: right;
+  }
+
 .video-container {
 	position: relative;
 	width: 100%;
@@ -101,7 +97,7 @@ a:active {
 	color: white; 
 	font-size: 3rem; 
 	z-index: 2; 
-	text-align: center; /
+	text-align: center; 
 }
   
 .video-container video {
@@ -117,11 +113,63 @@ a:active {
 	transform: translate(-50%, -50%);
 }
 
+.history {
+	position: relative;
+	width: 100%;
+	height: 100vh; 
+	overflow: hidden;
+}
+
+.history h1 {
+	position: absolute; 
+	top: 50%; 
+	left: 50%; 
+	transform: translate(-50%, -50%); 
+	color: white; 
+	font-size: clamp(2.25rem, 5vw, 6rem);
+	z-index: 2; 
+	text-align: center; 
+}
+  
+.history img {
+	position: relative; 
+	width: 100%; 
+	height: auto; 
+	z-index: 1; 
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover; 
+	transform: translate(-50%, -50%);
+}
+
+.history1 h2{
+	text-align: center;
+	margin-top: 40px;
+}
+
+.history2 h2{
+	text-align: center;
+	margin-top: 40px;
+}
+
+.history1 p{
+	text-align: justify;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
 .site-logo {
-   height: 140px;
+   height: 120px;
    width: auto;
    align-items: center;
    padding: 20px;
+   transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.site-logo:hover {
+	transform: scale(1.2); 
 }
 
 .site-header {
@@ -184,9 +232,49 @@ a:active {
 	text-align: center;
 	font-size: 1.3rem;
 	font-weight: 500;
-  }
+}
+
+p {
+	max-width: 80%;
+	margin: 0 auto;
+	text-align: justify;
+}
+
+.long-line {
+    border-top: 0.5px solid #000; 
+    width: 70%; 
+    margin: 20px auto; 
+}
+
+.history1 img{
+	max-width: 70%;
+	height: auto;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.history2 img{
+	max-width: 70%;
+	height: auto;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.contact-me {
+    width: 80%;  
+    margin: 0 auto;  
+    padding: 18px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border: none;  
+}
 
 @media (min-width: 55em) {
+
 	.menu-toggle {
 		display: none;
 	}
@@ -201,6 +289,7 @@ a:active {
 	.nav-menu li{
 		padding-right: 70px;
 	}
+
 	.photos {
 		padding: 5rem 2rem;
 		position: relative;
@@ -258,41 +347,132 @@ a:active {
 		z-index: 1;
 		transform: rotate(15deg);
 	}
+
+	.history2 img{
+		height: 10rem;
+		margin-right: 130px;
+		float: right;
+		margin-left: 20px;
+		margin-top: 15px;
+	}
+
+	.history1 img{
+		width: 20rem;
+		height: 10rem;
+		margin-left: 130px;
+		float: left;
+		margin-right: 20px;
+		margin-top: 15px;
+	}
+
+	.history {
+		position: relative;
+		width: 100%;
+		height: 100vh; 
+		overflow: hidden;
+	}
+	
+	.history h1 {
+		position: absolute; 
+		top: 50%; 
+		left: 50%; 
+		transform: translate(-50%, -50%); 
+		color: white; 
+		font-size: 5rem; 
+		z-index: 2; 
+		text-align: center; 
+	}
+	  
+	.history img {
+		position: relative; 
+		max-width: 100%;
+		height: auto; 
+		z-index: 1; 
+		top: 50%;
+		left: 50%;
+		object-fit: cover; 
+		transform: translate(-50%, -50%);
+	}
+
+	.contact-me {
+		width: 30%;  
+		margin: 0 auto;  
+		padding: 18px;
+		background-color: #ffffff;
+		border-radius: 8px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+		border: none;  
+	}
+
+	.grid-map {
+		display: grid;
+		gap:6px; 
+		grid-template-columns: repeat(18, 1fr);	
+		grid-template-rows: repeat(11, 1fr);
+	}
+
+	.grid-map img {
+		width: 100%;    
+		height: 100%; 
+		transition: transform 0.3s ease;   
+	}
+
+	.grid-map div:first-child{
+		grid-column: 4/10;
+		grid-row: 1/8;
+		object-fit: cover;
+	}
+
+	.grid-map div:nth-child(2){
+		grid-column: 10/13;
+		grid-row: 1/6;
+	}
+	
+	.grid-map div:nth-child(3){
+		grid-column: 13/16;
+		grid-row: 1/6;
+	}
+	   
+	.grid-map div:nth-child(4){
+		grid-column: 4/11;
+		grid-row: 8/11;
+	}
+	
+	.grid-map div:nth-child(5){
+		grid-column: 10/16;
+		grid-row: 6/8;
+	}
+
+	.grid-map div:nth-child(6){
+		grid-column:11/16;
+		grid-row: 8/11;
+	}
+   	
+	.credits{
+		margin-top: 200px;
+	}
 }
 
-.site-header{
-	height: 100px;
-}
-
-/* Main
+/* Footer
 --------------------------------------------- */
-.about h2 {
-	display: flex;              
-	justify-content: center;     
-	align-items: center; 
-	color: black; 
-	margin-bottom: 10px   				
-}
-
-.about p{
+.site-footer {
 	display: flex;
-	flex-direction: column;
-	justify-content: center; 
-	align-items: center; 
-	width: clamp(1rem, 90vw, 70rem);
-	margin-right: auto;
-	margin-left: auto;        
-    font-size: 1.6rem;
+	justify-content: center;
+	font-size: 1.5rem;
+	background-color:  #7baeaa ;
 }
 
-.contact-me {
-    width: 30%;  
-    margin: 0 auto;  
-    padding: 18px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    border: none;  
+footer a{
+	font-size: 1.5rem;	
+}
+
+	
+/* Form
+--------------------------------------------- */
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
 }
 
 legend {
@@ -343,25 +523,10 @@ button {
     transition: background-color 0.3s, box-shadow 0.3s;
 	margin: 10px auto;
 	box-shadow: 0px 10px 15px -7px #000;
-    display: block;  /* 设置按钮为块级元素，使其可以使用 auto margin 居中 */
+    display: block;  
 }
 
 button:hover {
     background-color: #0056b3;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
-}
-
-@media (max-width: 55em) {
-    .contact-me {
-        width: 90%;
-    }
-}
-
-/* Footer
---------------------------------------------- */
-.site-footer {
-	display: flex;
-	justify-content: center;
-	font-size: 1.5rem;
-	background-color:  #A2B9C2 ;
 }

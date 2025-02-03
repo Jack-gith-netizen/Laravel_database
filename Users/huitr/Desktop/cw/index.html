@@ -2,7 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA | Home</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">	  
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,12 +15,12 @@
 	   
 	<link rel="stylesheet" href="styles/normalize-fwd.css">
 	<link rel="stylesheet" href="styles/styles.css">
-	<title>GTA | Home</title>
+	
 
 	<link rel="icon" href="favicon.ico" sizes="any"> 
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
-    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
 </head>
 
 <body>
@@ -33,10 +38,10 @@
 			</button>
 			
 			<ul class="nav-menu" id="header-menu">
-				<li><a href="#about">History</a></li>
-				<li><a href="#projects">Food</a></li>
-				<li><a href="#contactme">Activities</a></li>
-				<li><a href="old/old.html">Credit</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="history.html">History</a></li>
+				<li><a href="Cuisine.html">Cuisine</a></li>
+				<li><a href="Credits.html">Credits</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -44,25 +49,27 @@
 	<main>
         <section class="video-container">
 			<h1>more than Amazing, GTA</h1>
-			<video autoplay muted loop>
-			  <source src="video/toronto_4K.mp4" type="video/mp4"  />
+			<video autoplay muted playsinline>
+			  <source src="video/toronto_4K.mp4" type="video/mp4">
 			</video>
 		  </section>
 		
 		<section class="about" >
 			<h2>About</h2>
-			<p>Toronto is the largest city in Canada and the capital of Ontario. It is known for its multicultural atmosphere, dynamic
-				 arts scene, and diverse population. With a population of over 2.8 million people, Toronto is a global hub for finance, 
-				 technology, education, and culture.The city is famous for its iconic landmarks such as the CN Tower, which once held the title of the world’s tallest 
-				free-standing structure, and the Royal Ontario Museum (ROM), which showcases world-class collections in art, culture, 
-				and nature.
+			<p>Vivamus bibendum placerat malesuada. Morbi eu porta quam. Donec nibh mi, ultricies quis urna quis, fermentum dapibus 
+				eros. Quisque rutrum dapibus orci. Curabitur tellus tellus, varius in leo id, iaculis est. Aliquam laoreet, 
+				risus at pharetra consequat, quam purus cursus metus, quis condimentum dolor mauris et augue. Aliquam 
+				scelerisque tortor non feugiat. Quisque dictum felis ut cursus lobortis. Fusce pellentesque dui sed tristique elementum. 
+				Aenean elit ante, sed luctus eros consequat quis.
 			</p>
-			<p>Toronto also has vibrant neighborhoods, from the trendy Distillery District to the multicultural Kensington
-                Market.Toronto's waterfront, along Lake Ontario, offers beautiful parks and recreational areas, while the nearby Toronto Islands provide a peaceful escape from the hustle and bustle of city life. The city’s public transportation system, including the TTC (Toronto Transit Commission), makes it easy to explore its many attractions.
+			<p>Vestibulum urna in dictum. Mauris feugiat iaculis sapien scelerisque pretium. Nulla in mollis velit.
+			   Pellentesque euismod turpis dolor, eget tristique leo imperdiet vitae. Sed a commodo lacus. Interdum et malesuada fames
+			   ac ante ipsum primis in faucibus. Vivamus augue augue, semper ac augue at, blandit consequat lorem.
 			</p> 
 		</section> 
 
-	    <section> 
+	    <section>
+			<h3>Impression</h3> 
 			<div class="photos">
                 <figure class="caption photo1">
 				<img src="images/tower-4843604_1280.jpg" alt="tower-4843604_1280">
@@ -88,33 +95,32 @@
 		
 		<section class="contact-me">
 			<form action="/submit" method="POST">				
-					<legend>Subscribe to receive updates!</legend>
-				    <div class="form-part">
-					<label for="name">Name：</label>
-					<input type="text" id="name" name="name" placeholder="Your name..." required><br><br>
-				    </div>
+				<h3>Subscribe to receive updates!</h3>
+				<div class="form-part">
+				<label for="name">Name：</label>
+				<input type="text" id="name" name="name" placeholder="Your name..." required><br><br>
+				</div>
 		             
-					<div class="form-part">
-					<label for="email">EMAIL：</label>
-					<input type="email" id="email" name="email" placeholder="Your Email..." required><br><br>
-				    </div>
+				<div class="form-part">
+				<label for="email">EMAIL：</label>
+				<input type="email" id="email" name="email" placeholder="Your Email..." required><br><br>
+				</div>
                     
-					<div class="form-part">
-					<label for="message">Message：</label><br>
-					<textarea id="message" name="message" rows="4" cols="20" placeholder="Your Words..." required></textarea><br><br>
-				    </div>
+				<div class="form-part">
+				<label for="message">Message：</label><br>
+				<textarea id="message" name="message" rows="4" cols="20" placeholder="Your Words..." required></textarea><br><br>
+				</div>
 
-					<div class="form-part">
-					<button type="submit">Send Message</button>
-					</div>
+				<div class="form-part">
+				<button type="submit">Send Message</button>
+				</div>
 			</form>
 		</section>
 	</main>
 
 	<footer class="site-footer" id="contact">
-		<p>&copy; Jack Liu 2025  <a href="https://jackliu.us">jackliu.us</a></p>		
-		</nav>
-	  </footer>
-	  <script src="scripts/navigation.js"></script>
+		<p>&copy; Jack Liu 2025  <a href="https://jackliu.us">jackliu.us</a>|  For Educational Purposes Only</p>
+	</footer>
+	<script src="scripts/navigation.js"></script>
 </body>
 </html>
