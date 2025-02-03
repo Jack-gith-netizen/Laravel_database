@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Explore the rich history, vibrant food scene, and breathtaking landscapes of Toronto. Discover the city's cultural heritage, iconic landmarks, and top dining spots.">
+
+
+    <title>GTA | Home</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">	  
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+	   
+	<link rel="stylesheet" href="styles/normalize-fwd.css">
+	<link rel="stylesheet" href="styles/styles.css">
+	
+
+	<link rel="icon" href="favicon.ico" sizes="any"> 
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body>
+	<header class="site-header">
+		<a href="index.html" target="_blank" class="home-button">
+			<img src="images/toronto.png" alt="toronto_city_logo" class="site-logo">
+		</a>
+
+		<nav class="site-navigation" id="site-navigation">	
+			<button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+					<title>Menu Icon</title>
+					<path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
+				</svg>
+			</button>
+			
+			<ul class="nav-menu" id="header-menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="history.html">History</a></li>
+				<li><a href="Cuisine.html">Cuisine</a></li>
+				<li><a href="Credits.html">Credits</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+        <section class="video-container">
+			<h1>more than Amazing, GTA</h1>
+			<video autoplay muted preload="auto">
+			  <source src="video/toronto-4k.mp4" type="video/mp4">
+			  Your browser does not support the video tag.
+			</video>
+		  </section>
+		
+		<section class="about" >
+			<h2>About</h2>
+			<p>Vivamus bibendum placerat malesuada. Morbi eu porta quam. Donec nibh mi, ultricies quis urna quis, fermentum dapibus 
+				eros. Quisque rutrum dapibus orci. Curabitur tellus tellus, varius in leo id, iaculis est. Aliquam laoreet, 
+				risus at pharetra consequat, quam purus cursus metus, quis condimentum dolor mauris et augue. Aliquam 
+				scelerisque tortor non feugiat. Quisque dictum felis ut cursus lobortis. Fusce pellentesque dui sed tristique elementum. 
+				Aenean elit ante, sed luctus eros consequat quis.
+			</p>
+			<p>Vestibulum urna in dictum. Mauris feugiat iaculis sapien scelerisque pretium. Nulla in mollis velit.
+			   Pellentesque euismod turpis dolor, eget tristique leo imperdiet vitae. Sed a commodo lacus. Interdum et malesuada fames
+			   ac ante ipsum primis in faucibus. Vivamus augue augue, semper ac augue at, blandit consequat lorem.
+			</p> 
+		</section> 
+
+	    <section>
+			<h3>Impression</h3> 
+			<div class="photos">
+                <figure class="caption photo1">
+				<img src="images/tower-4843604_1280.jpg" alt="tower-4843604_1280">
+				<figcaption>CN Tower</figcaption>
+				</figure>
+
+				<figure class="caption photo2">
+				<img src="images/campus-347285_1280.jpg" alt="campus">
+				<figcaption>University of Toronto</figcaption>
+				</figure>
+				
+				<figure class="caption photo3">
+				<img src="images/traffic-189115_1280.jpg" alt="downtown">
+				<figcaption>Downtown</figcaption>
+				</figure>
+
+				<figure class="caption photo4">
+				<img src="images/toronto-city-hall-1030731_1280.jpg" alt="cityhall">
+				<figcaption>City Hall</figcaption>
+				</figure>
+			</div>
+		</section>
+		
+		<section class="contact-me">
+			<form action="/submit" method="POST">
+				<h3>Subscribe to receive updates!</h3>
+			
+				<div class="form-part">
+					<label for="name">Name：</label>
+					<input type="text" id="name" name="name" placeholder="Your name..." required aria-describedby="name-error">
+					<span id="name-error" style="color: red; display: none;">Name is required</span><br><br>
+				</div>
+			
+				<div class="form-part">
+					<label for="email">EMAIL：</label>
+					<input type="email" id="email" name="email" placeholder="Your Email..." required aria-describedby="email-error">
+					<span id="email-error" style="color: red; display: none;">A valid email is required</span><br><br>
+				</div>
+			
+				<div class="form-part">
+					<label for="message">Message：</label><br>
+					<textarea id="message" name="message" rows="4" cols="20" placeholder="Your Words..." required aria-describedby="message-error"></textarea>
+					<span id="message-error" style="color: red; display: none;">Message is required</span><br><br>
+				</div>
+			
+				<div class="form-part">
+					<button type="submit">Send Message</button>
+				</div>
+			</form>
+		</section>
+	</main>
+
+	<footer class="site-footer" id="contact">
+		<p>&copy; Jack Liu 2025  <a href="https://jackliu.us">jackliu.us</a></p>
+	</footer>
+	<script src="scripts/navigation.js"></script>
+</body>
+</html>
