@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  color: red;
+  background: url("/images/1.png");
+  background-size: cover;
+}
+
+h1 {
+  font-family: 'horror', sans-serif;
+  text-align: center;
+  font-size: 120px;
+  color: rgb(47, 255, 75);
+}
+
+#board {
+  width: 1920px;
+  height: 1080px;
+  background-color: transparent;;
+  margin: 0 auto;
+  border: 3px solid whitesmoke;
+  border-radius: 30px;
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 80px;
+  padding: 140px;
+}
+
+#board div {
+  width: 200px;
+  height: 200px;
+  background: url("/images/pipe.png");
+  background-size: cover;
+}
+
+@font-face {
+  font-family: "horror";
+  src: url("/Font/ZombiesReborn-Eanaj.otf") format("truetype");
+}
