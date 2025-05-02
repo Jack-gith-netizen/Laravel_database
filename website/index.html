@@ -1,77 +1,41 @@
 <!DOCTYPE HTML>
-<!--
-	Strongly Typed by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
-		<title>Strongly Typed by HTML5 UP</title>
+		<title></title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body class="homepage">
 		<div id="page-wrapper">
 
-			<!-- Header -->
+			
 				<div id="header-wrapper">
 					<div id="header" class="container">
 
-						<!-- Logo -->
-							<h1 id="logo"><a href="index.html">Strongly Typed</a></h1>
-							<p>A responsive HTML5 site template. Manufactured by HTML5 UP.</p>
-
-						<!-- Nav -->
-							<nav id="nav">
-								<ul>
-									<li><a class="icon fa-home" href="index.html"><span>Introduction</span></a></li>
-									<li>
-										<a href="#" class="icon fa-bar-chart-o"><span>Dropdown</span></a>
-										<ul>
-											<li><a href="#">Lorem ipsum dolor</a></li>
-											<li><a href="#">Magna phasellus</a></li>
-											<li><a href="#">Etiam dolore nisl</a></li>
-											<li>
-												<a href="#">Phasellus consequat</a>
-												<ul>
-													<li><a href="#">Magna phasellus</a></li>
-													<li><a href="#">Etiam dolore nisl</a></li>
-													<li><a href="#">Phasellus consequat</a></li>
-												</ul>
-											</li>
-											<li><a href="#">Veroeros feugiat</a></li>
-										</ul>
-									</li>
-									<li><a class="icon fa-cog" href="left-sidebar.html"><span>Left Sidebar</span></a></li>
-									<li><a class="icon fa-retweet" href="right-sidebar.html"><span>Right Sidebar</span></a></li>
-									<li><a class="icon fa-sitemap" href="no-sidebar.html"><span>No Sidebar</span></a></li>
-								</ul>
-							</nav>
+					
+							<h1 id="logo"><a href="index.html">Show Time</a></h1>
+							
+					
+					
 
 					</div>
 				</div>
 
-			<!-- Features -->
 				<div id="features-wrapper">
 					<section id="features" class="container">
 						<header>
-							<h2>Gentlemen, behold! This is <strong>Strongly Typed</strong>!</h2>
+							<h2></h2>
 						</header>
 						<div class="row">
 							<div class="4u 12u(mobile)">
 
-								<!-- Feature -->
 									<section>
-										<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
 										<header>
-											<h3>Okay, so what is this?</h3>
+											<h3 id="starter">1. Starter Code</h3>
 										</header>
-										<p>This is <strong>Strongly Typed</strong>, a free, fully responsive site template
-										by <a href="http://html5up.net">HTML5 UP</a>. Free for personal and commercial use under the
-										<a href="http://html5up.net/license">CCA 3.0 license</a>.</p>
+										<p>Welcome everyone. Before we begin, please check Slack for the starter code. Open the files on your computer and give us a heads-up once you’re ready. This code will be our foundation as we go through the demos later.</p>
 									</section>
 
 							</div>
@@ -79,13 +43,11 @@
 
 								<!-- Feature -->
 									<section>
-										<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+									
 										<header>
-											<h3>Nice! What is HTML5 UP?</h3>
+											<h3>2. CSS vs. JavaScript Animations</h3>
 										</header>
-										<p><a href="http://html5up.net">HTML5 UP</a> is a side project of <a href="http://n33.co">AJ’s</a> (= me).
-										I started it as a way to both test my <strong>skel</strong> framework and sharpen up my coding
-										and design skills a bit.</p>
+										<p>In this slide, we compare CSS and JavaScript animations. CSS animations are great for simple, straightforward effects—they’re easy to implement and maintain. In contrast, JavaScript animations offer greater control and flexibility, which is useful for more complex or dynamic scenarios. Later, I’ll show you an example that highlights these differences in action.</p>
 									</section>
 
 							</div>
@@ -93,20 +55,84 @@
 
 								<!-- Feature -->
 									<section>
-										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+										
 										<header>
-											<h3>Skel? What's that?</h3>
+											<h3>3. Basic Animation Properties</h3>
 										</header>
-										<p><strong>Skel</strong> is a lightweight framework for building responsive
-										sites and apps. All of my stuff at <a href="http://html5up.net">HTML5 UP</a> (including this
-										one) are built on this framework.</p>
+										<p>Let’s start with the basic properties of CSS animations. The 'animation-name' property links an element to a set of @keyframes that define the animation sequence. Meanwhile, 'animation-duration' specifies how long one cycle of the animation takes to complete. These two properties form the core of any CSS animation.</p>
 									</section>
 
+							</div>
+							<div class="4u 12u(mobile)">
+
+								<!-- Feature -->
+									<section>
+										
+										<header>
+											<h3>4. Repetition & Direction</h3>
+										</header>
+										<p>Now, we’ll discuss how to control the repetition and direction of animations. 'Animation-iteration-count' lets you set how many times an animation should play—this can be a specific number or infinite. 'Animation-direction' determines whether the animation plays normally, in reverse, or alternates between the two. Finally, 'animation-fill-mode' controls the state of the element before and after the animation runs, ensuring a smooth visual transition.</p>
+									</section>
+
+							</div>
+							<div class="4u 12u(mobile)">
+
+								<!-- Feature -->
+									<section>
+										
+										<header>
+											<h3>5. Timing Properties</h3>
+										</header>
+										<p>Next are the timing properties. 'Animation-delay' sets a pause before the animation starts,
+											 and interestingly, it can even be negative, so the animation begins partway through its
+											  cycle. 'Animation-timing-function' lets you define the speed curve of the animation, like easing in or out, which affects how the animation feels. 'Animation-play-state' is useful for pausing and resuming the animation as needed. Understanding these gives you fine control over how and when your animations play.</p>
+									</section>
+
+							</div>
+							<div class="4u 12u(mobile)">
+
+								<!-- Feature -->
+									<section>
+										
+										<header>
+											<h3>6.The 'animation' Shorthand</h3>
+										</header>
+										<p>This slide introduces the 'animation' shorthand property. Instead of writing out each 
+											individual property, you can bundle them into a single line. This not only simplifies 
+											your CSS but also makes it easier to maintain. For those who want more detail, I’ve 
+											included a link to the MDN documentation on CSS animations.</p>
+									</section>
+							</div>
+							<div class="4u 12u(mobile)">
+
+								
+									<section>
+										
+										<header>
+											<h3>7.Accessibility Considerations</h3>
+										</header>
+										<p>Accessibility is a crucial aspect of web design. With animations, it’s important to 
+											consider users who may experience discomfort from excessive motion. Best practices 
+											include providing a ‘reduce motion’ option and ensuring that animations are subtle 
+											and not too distracting. This approach helps make your website more inclusive and 
+											user-friendly.</p>
+									</section>
+							</div>
+							<div class="4u 12u(mobile)">
+
+								<!-- Feature -->
+									<section>
+										
+										<header>
+											<h3>8.Real-World Examples</h3>
+										</header>
+										<p>Finally, let’s look at some real-world examples of CSS animations. On this slide, 
+											you’ll see screenshots and brief notes on how popular websites implement CSS animations to enhance user experience. Take note of how these sites balance motion with usability—this can provide great inspiration for your own projects. In our demo, we’ll also inspect some live examples to see these techniques in action.</p>
+									</section>
 							</div>
 						</div>
-						<ul class="actions">
-							<li><a href="#" class="button icon fa-file">Tell Me More</a></li>
-						</ul>
+						</div>
+					
 					</section>
 				</div>
 
