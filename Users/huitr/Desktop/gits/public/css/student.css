@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    background-color: white; 
+}
+
+header {
+    background-color: #0f1215;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    flex: 1; 
+}
+
+h1, h2 {
+    text-align: center;
+    color: #004080;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: #141212;
+    padding: 10px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.credit {
+    margin-bottom: 2rem;
+}
+
+p {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    background-color: #f2f4f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background-color: #e6f0ff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+@media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        color: #004080;
+    }
+}
+
+.message {
+    text-align: center;
+    margin: 20px auto;
+    width: 100%; 
+    background-color: #ffffff;
+}
+
+.message ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto; 
+    display: block; 
+    text-align: center; 
+}
+
+.message li {
+    display: block;
+    background-color: #ffffff; 
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #7d2e3f;
+}
